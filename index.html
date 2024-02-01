@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador</title>
+</head>
+
+<body>
+    <img class = "logo" src = "./assets/Vector.png" alt = "logo alura">
+    <header> </header>
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <textarea type="text" class="apresentacao__conteudo_textoentrada" placeholder = "Digite seu texto"></textarea>
+            <div class ="apresentacao__conteudo_caracteres">
+            <img id = "img2" class = "apresentacao__conteudo_caracteresespeciais_img" src="./assets/bi_exclamation-circle-fill.png" alt="ponto exclamacao">
+            <h1 class = "apresentacao__conteudo_caracteresespeciais"></h1>
+            </div>
+            <div class="apresentacao__conteudo_botoes">
+                <button id = "b1" onclick="criptografarTexto()" class="apresentacao__conteudo_botoes_cripto">Criptografar</button>
+                <button id = "b2" onclick="descriptografarTexto()"  class="apresentacao__conteudo_botoes_descripto" >Descriptografar</button>
+            </div>
+            <script src="app.js" defer></script>
+        </section>
+        <section class = "apresentacao__conteudo_saida"> 
+            <img id = "img1" class = "apresentacao__conteudo_saidaimagem" src="./assets/boneco.jpg" alt="boneco sentado">
+            <h2 class = "apresentacao__conteudo_saidatextomaior"></h2>
+            <h3 class = "apresentacao__conteudo_saidatextomenor"></h3>
+            <textarea id = "p" class = "apresentacao__conteudo_saidatextocripto_ou_descripto" hidden></textarea>
+            <button id = "b3" onclick="copiarTexto()" class="apresentacao__conteudo_saida_botao_copiar" hidden = "hidden">Copiar</button>
+        </section>
+    </main>
+    <footer class ="rodape">
+            <a class = "rodape_autor" href="https://github.com/gustavourbani">Desenvolvido por Urbani</a>
+    </footer>
+</body>
+
+</html>
